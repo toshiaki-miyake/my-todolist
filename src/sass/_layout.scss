@@ -1,0 +1,40 @@
+div#app {
+  max-width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #999;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.input-wrap {
+  margin-bottom: 10px;
+}
+.notice {
+  font-size: 14px;
+}
+#elemUl {
+  li {
+    padding: 0 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    &:not(:nth-of-type(1)) {
+      border-top: none;
+    }
+    .title {
+      font-size: 14px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+.detail {
+  margin-top: 20px;
+  display: none;
+
+}

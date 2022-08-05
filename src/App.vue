@@ -15,12 +15,16 @@
       todosArr.value.push(newTodo.value)
       newTodo.value = ''
 
+      textAreaArr.value.push('')
+
       document.getElementById('detailTitle').innerHTML = todosArr.value[index]
       document.getElementsByClassName('detail')[0].style.display = "none"
+      
     }
   }
   const removeTodo = (index) => {
     todosArr.value.splice(index, 1)
+    textAreaArr.value.splice(index, 1)
     document.getElementsByClassName('detail')[0].style.display = "none"
   }
   const openDetail = (index) => {
@@ -39,6 +43,7 @@
   const textAreaSave = (index) => {
     // 配列を上書き
     textAreaArr.value.splice(i, 1, document.getElementsByClassName('detail_text')[0].value)
+    console.log(textAreaArr.value)
   }
 </script>
 

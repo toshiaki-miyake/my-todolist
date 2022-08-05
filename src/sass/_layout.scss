@@ -18,18 +18,26 @@ h1 {
 }
 #elemUl {
   li {
-    padding: 0 10px;
     border: 1px solid #000;
     display: flex;
     justify-content: space-between;
     &:not(:nth-of-type(1)) {
       border-top: none;
     }
-    .title {
-      font-size: 14px;
-    }
     span {
       cursor: pointer;
+      &.title {
+        width: 85%;
+        padding-left: 10px;
+        font-size: 14px;
+      }
+      &.close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+        width: 15%;
+      }
     }
   }
 }
